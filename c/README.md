@@ -5,6 +5,7 @@ Benchmarks as of commit 7a163e53:
 | Platform | CPU | OS | Compiler | Iterations | Time |
 |----------|-----|----|----------|------------|------|
 | Feather M0 | ATSAMD21 | None | gccarm 9.3.1 | 10,000 | 144s |
+| Raspberry Pi 4B | BCM2711, Quad core Cortex-A72 | Debian 12 | gcc 12 | 1,000,000 | 10.9s |
 | PC Desktop | Core i5 3570K | FreeBSD 14.4 | clang 19 | 1,000,000 | 6.4s |
 | PC Desktop | Core i7 8700 | Ubuntu 22.04 | gcc 14 | 1,000,000 | 6.2s |
 | PC Desktop | Core i7 8700 | Ubuntu 22.04 | clang 20 | 1,000,000 | 3.6s |

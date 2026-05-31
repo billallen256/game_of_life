@@ -118,6 +118,27 @@ int count_ones(uint64_t x) {
     return (int) x;
 }
 
+int kernighan_count_ones(uint64_t v) {
+    int count = 0;
+
+    for (; v != 0; count++) {
+        v &= v - 1;
+    }
+
+    return count;
+}
+
+int get_population3(uint64_t* state) {
+    int population = 0;
+    int row = 0;
+
+    for (row = 0; row < GOL_SIZE; ++row) {
+        population += kernighan_count_ones(state[row]);
+    }
+
+    return population;
+}
+
 int get_population2(uint64_t* state) {
     int population = 0;
     int row = 0;

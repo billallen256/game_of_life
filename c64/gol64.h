@@ -1,5 +1,5 @@
-#ifndef _gol_h_
-#define _gol_h_
+#ifndef _gol64_h_
+#define _gol64_h_
 
 #include <stddef.h>
 #include <stdint.h>
@@ -17,6 +17,7 @@ int neighbor_count(uint64_t* state, int x, int y);
 int neighbor_count2(uint64_t* state, int x, int y);
 int get_population(uint64_t* state);
 int count_ones(uint64_t x);
+int kernighan_count_ones(uint64_t x);
 bool get_life(uint64_t* state, int x, int y);
 bool get_occupied(uint64_t* state, int x, int y);
 
